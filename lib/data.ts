@@ -1,4 +1,4 @@
-import { IProject } from '@/types';
+import { IExperience, IProject } from '@/types';
 
 export const GENERAL_INFO = {
     email: 'gonzalezruizdaniel183@gmail.com',
@@ -257,6 +257,6 @@ export const PROJECTS: IProject[] = [
     },
 ];
 
-export const MY_EXPERIENCE = [
+export const MY_EXPERIENCE: IExperience[] = [
     // TODO: Add your work experience here
 ];
