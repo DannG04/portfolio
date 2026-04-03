@@ -1,95 +1,71 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'gonzalezruizdaniel183@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
+    emailBody: 'Hi Daniel, I am reaching out to you because...',
 
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    linkedIn: 'https://www.linkedin.com/in/daniel-gonzalez-ruiz-18b454196',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/DannG04' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/daniel-gonzalez-ruiz-18b454196' },
+    { name: 'instagram', url: 'https://www.instagram.com/danny_gz4/' },
 ];
 
 export const MY_STACK = {
-    frontend: [
+    languages: [
+        {
+            name: 'Java',
+            icon: '/logo/java.svg',
+        },
+        {
+            name: 'Kotlin',
+            icon: '/logo/kotlin.svg',
+        },
+        {
+            name: 'Python',
+            icon: '/logo/python.svg',
+        },
+        {
+            name: 'C',
+            icon: '/logo/c.svg',
+        },
         {
             name: 'JavaScript',
             icon: '/logo/js.png',
         },
-        {
-            name: 'TypeScript',
-            icon: '/logo/ts.png',
-        },
-        {
-            name: 'React',
-            icon: '/logo/react.png',
-        },
-        {
-            name: 'Next.js',
-            icon: '/logo/next.png',
-        },
-        {
-            name: 'Redux',
-            icon: '/logo/redux.png',
-        },
-        {
-            name: 'Tailwind CSS',
-            icon: '/logo/tailwind.png',
-        },
-        {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
-        },
-        {
-            name: 'Framer Motion',
-            icon: '/logo/framer-motion.png',
-        },
-        {
-            name: 'Sass',
-            icon: '/logo/sass.png',
-        },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
-        },
     ],
     backend: [
         {
-            name: 'Node.js',
-            icon: '/logo/node.png',
-        },
-        {
-            name: 'NestJS',
-            icon: '/logo/nest.svg',
-        },
-        {
-            name: 'Express.js',
-            icon: '/logo/express.png',
-        },
-    ],
-    database: [
-        {
-            name: 'MySQL',
-            icon: '/logo/mysql.svg',
+            name: 'Spring Boot',
+            icon: '/logo/spring.svg',
         },
         {
             name: 'PostgreSQL',
             icon: '/logo/postgreSQL.png',
         },
         {
-            name: 'MongoDB',
-            icon: '/logo/mongodb.svg',
+            name: 'MySQL',
+            icon: '/logo/mysql.svg',
+        },
+    ],
+    frontend: [
+        {
+            name: 'Vue.js',
+            icon: '/logo/vue.svg',
+        },
+    ],
+    mobile: [
+        {
+            name: 'Kotlin',
+            icon: '/logo/kotlin.svg',
         },
         {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
+            name: 'Android Studio',
+            icon: '/logo/android.svg',
         },
     ],
     tools: [
@@ -98,17 +74,14 @@ export const MY_STACK = {
             icon: '/logo/git.png',
         },
         {
-            name: 'Docker',
-            icon: '/logo/docker.svg',
-        },
-        {
-            name: 'AWS',
-            icon: '/logo/aws.png',
+            name: 'Unity',
+            icon: '/logo/unity.svg',
         },
     ],
 };
 
 export const PROJECTS: IProject[] = [
+    // TODO: Add your projects here
     {
         title: 'Electro EV',
         slug: 'electro-ev',
@@ -285,24 +258,5 @@ export const PROJECTS: IProject[] = [
 ];
 
 export const MY_EXPERIENCE = [
-    {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
-    },
-    {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
-    },
-    {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
-    },
-    {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
-    },
+    // TODO: Add your work experience here
 ];

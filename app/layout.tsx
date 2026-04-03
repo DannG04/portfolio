@@ -29,8 +29,8 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata: Metadata = {
-    title: 'Portfolio - Tajmirul Islam',
-    description: 'Personal portfolio of Tajmirul Islam',
+    title: 'Portfolio - Daniel Gonzalez',
+    description: 'Personal portfolio of Daniel Gonzalez',
 };
 
 export default function RootLayout({
@@ -39,7 +39,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
             <GoogleAnalytics gaId="G-MHLY1LNGY5" />
             <Script id="hotjar" strategy="afterInteractive">
                 {`(function(h,o,t,j,a,r){
@@ -52,6 +52,7 @@ export default function RootLayout({
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}
             </Script>
             <body
+                suppressHydrationWarning
                 className={`${antonFont.variable} ${robotoFlex.variable} antialiased`}
             >
                 <ReactLenis
