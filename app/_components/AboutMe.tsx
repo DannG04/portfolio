@@ -74,15 +74,19 @@ const AboutMe = () => {
                         <div className="text-lg text-muted-foreground max-w-[450px]">
                             <p className="slide-up-and-fade">
                                 I&apos;m a passionate Computer Science student
-                                based in Oaxaca, Mexico. Currently working on
-                                desktop apps with Java and web apps with Vue,
-                                while learning mobile development with Kotlin &
-                                Android Studio.
+                                based in Oaxaca, Mexico. I build full-stack
+                                systems with Java & Spring Boot on the backend
+                                and Vue.js on the frontend, and I&apos;m
+                                currently expanding into mobile development with
+                                Kotlin & Android Studio.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
+                                Beyond the code, I deploy on Ubuntu servers
+                                using Docker and Docker Swarm, and automate
+                                workflows with GitHub Actions CI/CD pipelines.
                                 I enjoy solving complex problems with relational
-                                databases and I&apos;m looking to collaborate on
-                                open source Spring Boot projects.
+                                databases and collaborating on open source
+                                projects.
                             </p>
                         </div>
                     </div>
