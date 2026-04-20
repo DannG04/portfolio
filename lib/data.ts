@@ -189,6 +189,36 @@ export const PROJECTS: IProject[] = [
         longThumbnail: '/projects/long/pos-java.webp',
         images: [],
     },
+    {
+        title: 'UNSIS Book Catalog',
+        slug: 'unsis-book-catalog',
+        year: 2025,
+        description: `
+            Mobile UI/UX design for the digital library catalog of the Universidad de la Sierra Sur (UNSIS), created in Figma.<br/><br/>
+            Key features:<br/>
+            <ul>
+                <li>Book search by title, author, and ISBN</li>
+                <li>Availability status and book detail cards</li>
+                <li>Download, preview, and physical copy request actions</li>
+                <li>Pagination and category-based filtering</li>
+            </ul>
+        `,
+        role: `
+            UI/UX Designer (personal project)<br/>
+            <ul>
+                <li>Designed the complete mobile interface in Figma following a clean, accessible layout</li>
+                <li>Created reusable components for book cards, navigation bar, and action buttons</li>
+                <li>Applied UNSIS branding with consistent color scheme and typography</li>
+            </ul>
+        `,
+        techStack: ['Figma'],
+        thumbnail: '/projects/images/FIGMA-DESIGN/principal-mobile-version.png',
+        longThumbnail: '/projects/images/FIGMA-DESIGN/principal-desktop-version.png',
+        images: [
+            '/projects/images/FIGMA-DESIGN/principal-mobile-version.png',
+            '/projects/images/FIGMA-DESIGN/principal-desktop-version.png',
+        ],
+    },
 ];
 
 export const MY_EXPERIENCE: IExperience[] = [

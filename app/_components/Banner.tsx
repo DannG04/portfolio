@@ -5,6 +5,7 @@ import { GENERAL_INFO } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import Image from 'next/image';
 import React from 'react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -40,7 +41,7 @@ const Banner = () => {
                 className="container h-[100svh] min-h-[530px] max-md:pb-10 flex justify-between items-center max-md:flex-col"
                 ref={containerRef}
             >
-                <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px]">
+                <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[500px]">
                     <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
                         <span className="text-primary">BACKEND</span>
                         <br /> <span className="ml-4">DEVELOPER</span>
@@ -64,6 +65,19 @@ const Banner = () => {
                     >
                         Connect
                     </Button>
+                </div>
+
+                <div className="hidden md:flex items-center justify-center slide-up-and-fade">
+                    <div className="relative w-[300px] h-[380px] lg:w-[340px] lg:h-[430px] rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(99,120,255,0.6),0_0_35px_rgba(99,120,255,0.35),0_0_70px_rgba(99,120,255,0.15)]">
+                        <Image
+                            src="/photos/azul.png"
+                            alt="Daniel Gonzalez"
+                            fill
+                            priority
+                            sizes="(max-width: 1024px) 300px, 340px"
+                            className="object-cover object-top"
+                        />
+                    </div>
                 </div>
 
                 <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
