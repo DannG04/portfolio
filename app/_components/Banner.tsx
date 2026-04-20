@@ -68,13 +68,13 @@ const Banner = () => {
                 </div>
 
                 <div className="hidden md:flex items-center justify-center slide-up-and-fade">
-                    <div className="relative w-[300px] h-[380px] lg:w-[340px] lg:h-[430px] rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(99,120,255,0.6),0_0_35px_rgba(99,120,255,0.35),0_0_70px_rgba(99,120,255,0.15)]">
+                    <div className="relative w-[220px] h-[280px] lg:w-[260px] lg:h-[320px] rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(99,120,255,0.6),0_0_35px_rgba(99,120,255,0.35),0_0_70px_rgba(99,120,255,0.15)]">
                         <Image
                             src="/photos/azul.png"
                             alt="Daniel Gonzalez"
                             fill
                             priority
-                            sizes="(max-width: 1024px) 300px, 340px"
+                            sizes="(max-width: 1024px) 220px, 260px"
                             className="object-cover object-top"
                         />
                     </div>

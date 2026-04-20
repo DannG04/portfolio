@@ -212,11 +212,11 @@ export const PROJECTS: IProject[] = [
             </ul>
         `,
         techStack: ['Figma'],
-        thumbnail: '/projects/images/FIGMA-DESIGN/Catálogo UNSIS — Mobile.png',
-        longThumbnail: '/projects/images/FIGMA-DESIGN/Frame 1-desktop.png',
+        thumbnail: '/projects/images/FIGMA-DESIGN/catalogo-unsis-mobile.png',
+        longThumbnail: '/projects/images/FIGMA-DESIGN/frame1-desktop.png',
         images: [
-            '/projects/images/FIGMA-DESIGN/Catálogo UNSIS — Mobile.png',
-            '/projects/images/FIGMA-DESIGN/Frame 1-desktop.png',
+            '/projects/images/FIGMA-DESIGN/catalogo-unsis-mobile.png',
+            '/projects/images/FIGMA-DESIGN/frame1-desktop.png',
         ],
     },
 ];
