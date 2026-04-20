@@ -212,11 +212,11 @@ export const PROJECTS: IProject[] = [
             </ul>
         `,
         techStack: ['Figma'],
-        thumbnail: '/projects/images/FIGMA-DESIGN/principal-mobile-version.png',
-        longThumbnail: '/projects/images/FIGMA-DESIGN/principal-desktop-version.png',
+        thumbnail: '/projects/images/FIGMA-DESIGN/Catálogo UNSIS — Mobile.png',
+        longThumbnail: '/projects/images/FIGMA-DESIGN/Frame 1-desktop.png',
         images: [
-            '/projects/images/FIGMA-DESIGN/principal-mobile-version.png',
-            '/projects/images/FIGMA-DESIGN/principal-desktop-version.png',
+            '/projects/images/FIGMA-DESIGN/Catálogo UNSIS — Mobile.png',
+            '/projects/images/FIGMA-DESIGN/Frame 1-desktop.png',
         ],
     },
 ];
@@ -226,10 +226,5 @@ export const MY_EXPERIENCE: IExperience[] = [
         title: 'Desarrollador de Software (Prácticas Profesionales)',
         company: 'UNSIS',
         duration: 'Jul 2025 – Sep 2025',
-    },
-    {
-        title: 'Estancia Profesional',
-        company: 'Universidad Autónoma del Estado de Hidalgo (UAEH)',
-        duration: 'Jul 2026 – Sep 2026 (Próxima)',
     },
 ];
