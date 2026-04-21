@@ -308,6 +308,7 @@ export const PROJECTS: IProject[] = [
         techStack: ['Figma'],
         thumbnail: '/projects/images/FIGMA-DESIGN/catalogo-unsis-mobile.png',
         longThumbnail: '/projects/images/FIGMA-DESIGN/frame1-desktop.png',
+        liveUrl: 'https://www.figma.com/design/cWyUeDsjNYP4kBfdM7jNXm/Sin-t%C3%ADtulo?node-id=0-1&t=a3dM1ohEeSfM9AdT-1',
         images: [
             '/projects/images/FIGMA-DESIGN/catalogo-unsis-mobile.png',
             '/projects/images/FIGMA-DESIGN/frame1-desktop.png',
