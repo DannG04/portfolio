@@ -103,6 +103,12 @@ const ProjectList = () => {
         setSelectedProject(slug);
     };
 
+    const selectedProjectData = PROJECTS.find(
+        (p) => p.slug === selectedProject,
+    );
+    const isPortraitPreview =
+        selectedProjectData?.imageOrientation === 'portrait';
+
     return (
         <section className="pb-section" id="selected-projects">
             <div className="container">
@@ -111,17 +117,22 @@ const ProjectList = () => {
                 <div className="group/projects relative" ref={containerRef}>
                     {selectedProject !== null && (
                         <div
-                            className="max-md:hidden absolute right-0 top-0 z-[1] pointer-events-none w-[200px] xl:w-[350px] aspect-[3/4] overflow-hidden opacity-0"
+                            className={cn(
+                                'max-md:hidden absolute right-0 top-0 z-[1] pointer-events-none overflow-hidden opacity-0 rounded-md shadow-2xl bg-background-light',
+                                isPortraitPreview
+                                    ? 'w-[160px] xl:w-[220px] aspect-[9/19.5]'
+                                    : 'w-[360px] xl:w-[480px] aspect-[16/10]',
+                            )}
                             ref={imageContainer}
                         >
                             {PROJECTS.map((project) => (
                                 <Image
                                     src={project.thumbnail}
                                     alt="Project"
-                                    width="400"
-                                    height="500"
+                                    width="720"
+                                    height="450"
                                     className={cn(
-                                        'absolute inset-0 transition-all duration-500 w-full h-full object-cover',
+                                        'absolute inset-0 transition-all duration-500 w-full h-full object-cover object-top',
                                         {
                                             'opacity-0':
                                                 project.slug !==

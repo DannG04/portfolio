@@ -176,13 +176,13 @@ const ProjectDetails = ({ project }: Props) => {
                 </div>
 
                 <div
-                    className="fade-in-later relative flex flex-col gap-2 max-w-[800px] mx-auto"
+                    className={`fade-in-later relative max-w-[800px] mx-auto ${project.imageOrientation === 'portrait' ? 'grid grid-cols-2 sm:grid-cols-3 gap-3' : 'flex flex-col gap-2'}`}
                     id="images"
                 >
                     {project.images.map((image) => (
                         <div
                             key={image}
-                            className="group relative w-full aspect-[750/400] bg-background-light"
+                            className={`group relative w-full bg-background-light ${project.imageOrientation === 'portrait' ? 'aspect-[9/19.5]' : 'aspect-[750/400]'}`}
                             style={{
                                 backgroundImage: `url(${image})`,
                                 backgroundSize: 'cover',

@@ -55,9 +55,10 @@ const AboutMe = () => {
         <section className="pb-section" id="about-me">
             <div className="container" ref={container}>
                 <h2 className="text-4xl md:text-6xl font-thin mb-20 slide-up-and-fade">
-                    I love building robust software, focusing on backend
-                    architecture with Java and creating engaging mobile
-                    experiences with Kotlin.
+                    I build full-stack systems end to end — from REST APIs in
+                    Spring Boot and FastAPI to Vue and Angular frontends, native
+                    Android apps in Kotlin, and desktop tools with Tauri and
+                    Java.
                 </h2>
 
                 <p className="pb-3 border-b text-muted-foreground slide-up-and-fade">
@@ -73,20 +74,23 @@ const AboutMe = () => {
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[450px]">
                             <p className="slide-up-and-fade">
-                                I&apos;m a passionate Computer Science student
-                                based in Oaxaca, Mexico. I build full-stack
-                                systems with Java & Spring Boot on the backend
-                                and Vue.js on the frontend, and I&apos;m
-                                currently expanding into mobile development with
-                                Kotlin & Android Studio.
+                                I&apos;m a Computer Science student based in
+                                Oaxaca, Mexico, focused on full-stack
+                                development. I&apos;ve built institutional
+                                platforms with Vue.js, Spring Boot, and
+                                PostgreSQL (with PostGIS for geospatial data),
+                                and real-time management systems using FastAPI,
+                                Angular, and WebSockets.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
-                                Beyond the code, I deploy on Ubuntu servers
-                                using Docker and Docker Swarm, and automate
-                                workflows with GitHub Actions CI/CD pipelines.
-                                I enjoy solving complex problems with relational
-                                databases and collaborating on open source
-                                projects.
+                                Beyond the web, I ship native Android apps with
+                                Kotlin and Jetpack Compose, and cross-platform
+                                desktop applications with Tauri + SQLite and
+                                Java + Swing. I also handle deployments on
+                                Ubuntu servers using Docker, write automation
+                                scripts, and care about clean database design
+                                and delivering software that works in real-world
+                                environments.
                             </p>
                         </div>
                     </div>

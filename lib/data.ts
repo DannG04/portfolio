@@ -86,67 +86,82 @@ export const PROJECTS: IProject[] = [
         slug: 'data-unsis',
         year: 2025,
         description: `
-            Institutional data analysis and visualization platform built as a team project for the Universidad de la Sierra Sur (UNSIS).<br/><br/>
+            Student data visualization and analysis system developed for the Universidad de la Sierra Sur (UNSIS) by eighth-semester informatics students.<br/><br/>
             Key features:<br/>
             <ul>
-                <li>Spatial analysis with PostgreSQL + PostGIS for geographic data visualization</li>
-                <li>Interactive dashboard with charts and dynamic filters in Vue.js</li>
-                <li>Authentication and role-based access control via Spring Security</li>
-                <li>Robust REST API with Spring Boot consumed from the frontend</li>
+                <li>Interactive dashboards with filters by degree, semester, and sex</li>
+                <li>Statistical charts on sociodemographic indicators: economic level, civil status, indigenous languages, transportation, scholarships, blood type, and geographic origin</li>
+                <li>Georeferenced heat map of student population distribution</li>
+                <li>JWT-secured REST API with Spring Boot; Vue.js frontend</li>
             </ul>
         `,
         role: `
             Full-Stack Developer (classmate team)<br/>
             <ul>
-                <li>Designed and implemented the user interface with Vue.js, improving visualization and querying of institutional data</li>
+                <li>Designed and implemented the user interface with Vue.js for institutional data visualization</li>
                 <li>Developed REST endpoints in Spring Boot to expose geospatial data from PostgreSQL with PostGIS</li>
                 <li>Collaborated on the relational database model design</li>
             </ul>
         `,
         techStack: ['Vue.js', 'Spring Boot', 'Java', 'PostgreSQL', 'PostGIS'],
-        thumbnail: '/projects/thumbnail/data-unsis.webp',
-        longThumbnail: '/projects/long/data-unsis.webp',
-        images: [],
+        thumbnail: '/projects/images/DATA-UNSIS/dashboard_home.png',
+        longThumbnail: '/projects/images/DATA-UNSIS/dashboard_home.png',
+        images: [
+            '/projects/images/DATA-UNSIS/login_screen.png',
+            '/projects/images/DATA-UNSIS/dashboard_home.png',
+            '/projects/images/DATA-UNSIS/datos_demograficos.png',
+            '/projects/images/DATA-UNSIS/informacion_socioeconomica.png',
+            '/projects/images/DATA-UNSIS/ayuda.png',
+        ],
     },
     {
         title: 'CAABMO',
         slug: 'caabmo',
         year: 2025,
         description: `
-            Web system for managing basketball referees in Oaxaca, centralizing the administration of roles, matches, and assignments.<br/><br/>
+            Full-stack web platform for the Cuerpo de Árbitros y Anotadores de Baloncesto de Miahuatlán (CAABMO), centralizing basketball referee management in a single system.<br/><br/>
             Key features:<br/>
             <ul>
-                <li>Referee management: registration, profiles, and match assignments</li>
-                <li>Match scheduling with real-time availability</li>
-                <li>Administrative panel for directors with exportable reports</li>
-                <li>REST API with FastAPI connected to PostgreSQL</li>
+                <li>Weekly match administration with referee assignment and confirmation</li>
+                <li>Role-based user management (admins, referees, scorekeepers)</li>
+                <li>Educational resources portal and institutional communications</li>
+                <li>Public-facing site with calendar and announcements</li>
+                <li>Dockerized deployment with FastAPI, PostgreSQL, Vue 3, and Tailwind CSS</li>
             </ul>
         `,
         role: `
             Full-Stack Developer<br/>
             <ul>
-                <li>Developed the user interface with Vue.js, improving visualization and role management for referees</li>
-                <li>Implemented the backend with FastAPI (Python) and modeled the database in PostgreSQL</li>
-                <li>Designed the authentication and session management system</li>
+                <li>Built the frontend with Vue 3, Vite, PrimeVue, and Tailwind CSS</li>
+                <li>Implemented the backend with FastAPI, PostgreSQL, and SQLAlchemy</li>
+                <li>Designed the authentication, role management, and Docker deployment pipeline</li>
             </ul>
         `,
-        techStack: ['Vue.js', 'FastAPI', 'Python', 'PostgreSQL'],
-        thumbnail: '/projects/thumbnail/caabmo.webp',
-        longThumbnail: '/projects/long/caabmo.webp',
-        images: [],
+        techStack: ['Vue.js', 'FastAPI', 'Python', 'PostgreSQL', 'Docker'],
+        thumbnail: '/projects/images/CAABMO/caabmo-1.png',
+        longThumbnail: '/projects/images/CAABMO/caabmo-1.png',
+        images: [
+            '/projects/images/CAABMO/caabmo-1.png',
+            '/projects/images/CAABMO/caabmo-2.png',
+            '/projects/images/CAABMO/caabmo-3.png',
+            '/projects/images/CAABMO/caabmo-4.png',
+            '/projects/images/CAABMO/caabmo-5.png',
+            '/projects/images/CAABMO/caabmo-6.png',
+        ],
     },
     {
         title: 'Loan Management',
         slug: 'loan-management',
         year: 2024,
         description: `
-            Cross-platform desktop application for personal loan management, built with Tauri to deliver native performance using web technologies.<br/><br/>
+            Desktop application for loan and collections management, built with Vue 3, Tauri, and SQLite for fast, local, and secure operation.<br/><br/>
             Key features:<br/>
             <ul>
-                <li>Loan registration and tracking with automatic interest calculation</li>
-                <li>Payment date control and due date alerts</li>
-                <li>Local persistence with embedded SQLite</li>
-                <li>Native installer for Windows, macOS, and Linux via Tauri</li>
+                <li>Client management, loan registration with interest rates and terms</li>
+                <li>Payment and installment tracking with due-date alerts and risk traffic-light indicator</li>
+                <li>Key metrics dashboard for business overview</li>
+                <li>Database backup and restore functionality</li>
+                <li>Access controls and modern UI designed for daily real-world use</li>
             </ul>
         `,
         role: `
@@ -154,40 +169,119 @@ export const PROJECTS: IProject[] = [
             <ul>
                 <li>Designed and developed the desktop application using Tauri + Vue.js</li>
                 <li>Implemented the data layer with SQLite for local persistence without external dependencies</li>
-                <li>Built the interest calculation logic and payment alerts</li>
+                <li>Built the interest calculation logic, payment alerts, and risk indicators</li>
             </ul>
         `,
         techStack: ['Tauri', 'Vue.js', 'SQLite', 'Rust'],
-        thumbnail: '/projects/thumbnail/loan-management.webp',
-        longThumbnail: '/projects/long/loan-management.webp',
-        images: [],
+        thumbnail: '/projects/images/LEND-MANAGEMENT/lend-1.png',
+        longThumbnail: '/projects/images/LEND-MANAGEMENT/lend-1.png',
+        images: [
+            '/projects/images/LEND-MANAGEMENT/lend-1.png',
+            '/projects/images/LEND-MANAGEMENT/lend-2.png',
+            '/projects/images/LEND-MANAGEMENT/lend-3.png',
+            '/projects/images/LEND-MANAGEMENT/lend-4.png',
+            '/projects/images/LEND-MANAGEMENT/lend-5.png',
+            '/projects/images/LEND-MANAGEMENT/lend-6.png',
+        ],
     },
     {
         title: 'Point of Sale',
         slug: 'pos-java',
         year: 2024,
         description: `
-            Desktop point-of-sale system developed natively in Java, aimed at small businesses.<br/><br/>
+            Desktop point-of-sale system developed in Java with a Swing GUI and PostgreSQL, centralizing daily business operations.<br/><br/>
             Key features:<br/>
             <ul>
-                <li>Sales, product, and inventory management in real time</li>
-                <li>Receipt generation and direct printing</li>
-                <li>Daily and per-product sales reports</li>
-                <li>Local database with MySQL</li>
+                <li>Modular management: inventory, sales, customers, layaways, purchases, returns, expenses, profits, and employees</li>
+                <li>Excel report generation and user authentication</li>
+                <li>Modular architecture for easier maintenance and scalability</li>
             </ul>
         `,
         role: `
             Developer (personal project)<br/>
             <ul>
-                <li>Developed the complete system in Java with a native graphical interface</li>
-                <li>Implemented MySQL integration for inventory and sales management</li>
-                <li>Designed the report generation and export module</li>
+                <li>Developed the complete system in Java with a Swing graphical interface</li>
+                <li>Implemented PostgreSQL integration for inventory, sales, and operations management</li>
+                <li>Designed the Excel report generation and export module</li>
             </ul>
         `,
-        techStack: ['Java', 'MySQL', 'Swing'],
-        thumbnail: '/projects/thumbnail/pos-java.webp',
-        longThumbnail: '/projects/long/pos-java.webp',
-        images: [],
+        techStack: ['Java', 'PostgreSQL', 'Swing'],
+        thumbnail: '/projects/images/POINT-OF-SALE/pos-2.png',
+        longThumbnail: '/projects/images/POINT-OF-SALE/pos-2.png',
+        images: [
+            '/projects/images/POINT-OF-SALE/pos-2.png',
+            '/projects/images/POINT-OF-SALE/pos-3.png',
+            '/projects/images/POINT-OF-SALE/pos-4.png',
+            '/projects/images/POINT-OF-SALE/pos-1.png',
+        ],
+    },
+    {
+        title: 'UNSIS Smile',
+        slug: 'unsis-smile',
+        year: 2025,
+        description: `
+            Web system for managing dental clinical records, developed for the Universidad de la Sierra Sur (UNSIS), built with Spring Boot and Angular 17.<br/><br/>
+            Key features:<br/>
+            <ul>
+                <li>Complete dental clinical history management</li>
+                <li>Real-time communication via WebSockets</li>
+                <li>Role-based access control and CORS security configuration</li>
+                <li>Deployed on Ubuntu server with automation scripts for local network operation</li>
+            </ul>
+        `,
+        role: `
+            Maintenance & Operations Developer<br/>
+            <ul>
+                <li>Resolved security issues: CORS configuration and data sanitization</li>
+                <li>Implemented and stabilized real-time WebSocket communication</li>
+                <li>Fixed UI bugs and database integrity errors</li>
+                <li>Performed full deployment from scratch on an Ubuntu server, including automation scripts</li>
+            </ul>
+        `,
+        techStack: ['Spring Boot', 'Angular', 'Java', 'PostgreSQL', 'WebSockets'],
+        thumbnail: '/projects/images/UNSIS-SMILE/smile-1.png',
+        longThumbnail: '/projects/images/UNSIS-SMILE/smile-1.png',
+        images: [
+            '/projects/images/UNSIS-SMILE/smile-1.png',
+            '/projects/images/UNSIS-SMILE/smile-2.png',
+            '/projects/images/UNSIS-SMILE/smile-3.png',
+            '/projects/images/UNSIS-SMILE/smile-4.png',
+        ],
+    },
+    {
+        title: 'TastyMood',
+        slug: 'tasty-mood',
+        year: 2024,
+        description: `
+            Android mobile app built with Kotlin and Jetpack Compose that recommends recipes based on mood, diet type, and food preferences.<br/><br/>
+            Key features:<br/>
+            <ul>
+                <li>Recipe filtering by emotion, diet, preferred or excluded ingredients</li>
+                <li>Recipe detail view and favorites management</li>
+                <li>Profile registration and editing with DataStore persistence</li>
+                <li>Room database for local recipe management</li>
+                <li>Navigation Compose, Coil image loading, ViewModel, and coroutines</li>
+            </ul>
+        `,
+        role: `
+            Developer (academic project)<br/>
+            <ul>
+                <li>Designed and developed the full Android app using Kotlin and Jetpack Compose</li>
+                <li>Implemented local persistence with Room and DataStore</li>
+                <li>Built the mood-based recommendation logic and filtering system</li>
+            </ul>
+        `,
+        techStack: ['Kotlin', 'Jetpack Compose', 'Android', 'Room', 'DataStore'],
+        thumbnail: '/projects/images/TASTY-MOOD/tasty-2.jpg',
+        longThumbnail: '/projects/images/TASTY-MOOD/tasty-2.jpg',
+        imageOrientation: 'portrait',
+        images: [
+            '/projects/images/TASTY-MOOD/tasty-1.jpg',
+            '/projects/images/TASTY-MOOD/tasty-2.jpg',
+            '/projects/images/TASTY-MOOD/tasty-3.jpg',
+            '/projects/images/TASTY-MOOD/tasty-4.jpg',
+            '/projects/images/TASTY-MOOD/tasty-5.jpg',
+        ],
     },
     {
         title: 'UNSIS Book Catalog',

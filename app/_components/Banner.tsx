@@ -5,7 +5,6 @@ import { GENERAL_INFO } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import Image from 'next/image';
 import React from 'react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -65,19 +64,6 @@ const Banner = () => {
                     >
                         Connect
                     </Button>
-                </div>
-
-                <div className="hidden md:flex items-center justify-center slide-up-and-fade">
-                    <div className="relative w-[220px] h-[280px] lg:w-[260px] lg:h-[320px] rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(99,120,255,0.6),0_0_35px_rgba(99,120,255,0.35),0_0_70px_rgba(99,120,255,0.15)]">
-                        <Image
-                            src="/photos/azul.png"
-                            alt="Daniel Gonzalez"
-                            fill
-                            priority
-                            sizes="(max-width: 1024px) 220px, 260px"
-                            className="object-cover object-top"
-                        />
-                    </div>
                 </div>
 
                 <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">

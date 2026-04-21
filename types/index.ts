@@ -33,4 +33,5 @@ export interface IProject {
     slug: string;
     liveUrl?: string;
     sourceCode?: string;
+    imageOrientation?: 'portrait';
 }
